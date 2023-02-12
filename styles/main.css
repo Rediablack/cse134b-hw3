@@ -1,5 +1,152 @@
-main,
-nav,
+* {
+  /* border: 1px solid black; */
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font-family: "Tenor Sans";
+}
+
+h1,
+h2,
+nav {
+  font-family: "Lato";
+}
+
+body {
+  background-color: #a7a5c6;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+h1 {
+  text-align: center;
+  background-color: #9694b3;
+  padding: 10px 0;
+  border: 1px solid #83829c;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 2.5rem;
+  border: 1px solid #83829c;
+  background-color: #9694b3;
+}
+
+header {
+  background-color: #8797b2;
+  height: 80px;
+  align-self: flex-start;
+}
+
+main {
+  /* background-color: wheat; */
+  height: auto;
+}
+
+header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+header > nav > ul > li {
+  display: flex;
+  flex: 1;
+  height: 80px;
+}
+
+[aria-current]:not([aria-current="false"]) {
+  font-weight: bold;
+  background-color: #576f79;
+}
+
+header > nav > ul > li > a:link,
+header > nav > ul > li > a:visited {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #28262c;
+  border: 1px solid #76849c;
+  font-size: max(1.5rem, 1.5vw);
+  text-align: center;
+}
+
+header > nav > ul > li > a:hover {
+  background-color: #89acbb;
+  color: #3a3741;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-section {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 50px;
+}
+
+pre {
+  padding: 30px;
+  font-size: 2rem;
+}
+
+.text-chunk {
+  font-size: 2rem;
+  min-width: 30ex;
+  max-width: 80ex;
+  padding: 30px;
+}
+
+picture > img {
+  padding: 30px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer {
-  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 30vh;
+  align-self: flex-end;
+  background-color: #6d8a96;
+  border-top: 3px solid #546a74;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  padding: 0px 40px;
+}
+
+footer > div > h3 {
+  font-size: 2rem;
+}
+
+footer > div > p {
+  font-size: 1.5rem;
+}
+
+footer > nav > ul > li {
+  width: 10vw;
 }

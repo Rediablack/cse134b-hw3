@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <title>MZW Portfolio Home</title>
     <link href="images/favicon.ico" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tenor+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato"
+    />
+
     <link href="styles/main.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <nav aria-label="main">
         <ul>
-          <li><a aria-current="page" href="./index.html">Home</a></li>
+          <li aria-current="page"><a href="./index.html">Home</a></li>
           <li><a href="./project.html">Projects</a></li>
           <li><a href="./experience.html">Experience</a></li>
           <li><a href="./skill.html">Skills</a></li>
@@ -20,29 +29,28 @@
     </header>
     <main>
       <h1>Home</h1>
-      <h2>About Me</h2>
+
       <section>
-        <h3>Biography</h3>
-        <picture>
-          <img
-            src="./images/potrait.jpeg"
-            alt="self potrait"
-            width="300"
-            height="300"
-          />
-        </picture>
-        <div>
-          <br />
-          <code>print(user.info):</code>
+        <h2>About Me</h2>
+        <div class="vertical-section">
+          <picture>
+            <img
+              src="./images/potrait.jpeg"
+              alt="self potrait"
+              width="400px"
+              height="400px"
+            />
+          </picture>
           <pre>
-            Name:                       Myo Zaw Win
-            Nickname:                         David
-            Pronouns:                    He/Him/His
-            Age:                                 21
-            Location:                     San Diego
-            Employment:             Student At UCSD
+<code>print(user.info);</code>
+{ Name:                      Myo Zaw Win,
+ Nickname:                         David,
+ Pronouns:                    He/Him/His,
+ Age:                                 21,
+ Location:                     San Diego,
+ Employment:              Student At UCSD }
           </pre>
-          <p>
+          <p class="text-chunk">
             An international student from <b>Myanmar</b>, I moved to the US to
             study computer science at UCSD in 2020. Currently, I'm a third year
             student at UCSD, and from my classes, I believe myself to have a
@@ -57,22 +65,25 @@
         </div>
       </section>
       <section>
-        <h3>My Goals</h3>
-        <figure>
-          <img src="./images/career-road-path.png" width="500" />
-          <figcaption>
-            Placeholder: Envisioned Career Path After Graduating
-          </figcaption>
-        </figure>
-        <p>
-          <b>Placeholder Text</b>
-          After graduating, I plan to pursue a career in Software Development or
-          Web Development. In terms of front-end/back-end career development, I
-          want to focus more on front-end development. I pride myself on my
-          ability to learn and my strengths lie in academia. My weakness is my
-          lack of experience in the real tech field but I am a fast learner and
-          I can adapt quickly to the rapid changing field of technology.
-        </p>
+        <h2>Career Path</h2>
+        <div class="vertical-section">
+          <figure>
+            <img src="./images/career-road-path.png" width="80%" />
+            <figcaption>
+              Placeholder: Envisioned Career Path After Graduating
+            </figcaption>
+          </figure>
+          <p class="text-chunk">
+            <b>Placeholder Text</b>
+            After graduating, I plan to pursue a career in Software Development
+            or Web Development. In terms of front-end/back-end career
+            development, I want to focus more on front-end development. I pride
+            myself on my ability to learn and my strengths lie in academia. My
+            weakness is my lack of experience in the real tech field but I am a
+            fast learner and I can adapt quickly to the rapid changing field of
+            technology.
+          </p>
+        </div>
       </section>
       <section>
         <h3>Fun Facts About Me</h3>
@@ -87,7 +98,7 @@
     </main>
     <footer>
       <div>
-        <h4>Contact Me</h4>
+        <h3>Contact Me</h3>
         <p>Phone Number: <strong>(858)3199-799</strong></p>
         <p>Email: <strong>mwin@ucsd.edu</strong></p>
         <p>LinkedIn: <strong>mwin@ucsd.edu</strong></p>
