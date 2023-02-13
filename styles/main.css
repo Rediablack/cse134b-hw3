@@ -92,7 +92,7 @@ nav > ul > li > a:visited {
   text-decoration: none;
   color: #28262c;
   border: 1px solid #76849c;
-  font-size: max(1.5rem, 1.5vw);
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -133,14 +133,14 @@ button:hover {
 
 pre {
   padding: 30px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .text-chunk {
-  font-size: 1.5rem;
-  min-width: 30ex;
-  max-width: 80ex;
-  padding: 30px;
+  font-size: 1.4rem;
+  min-width: 60%;
+  max-width: 70%;
+  padding: 15px;
 }
 
 picture > img {
@@ -227,10 +227,11 @@ th {
   font-size: 1.5rem;
 }
 td {
-  font-size: max(15pt, 1rem);
+  font-size: 1rem;
 }
 
 #timeline-div {
+  display: flex;
   flex: 1;
   padding: 40px 20px;
   padding-left: 0;
