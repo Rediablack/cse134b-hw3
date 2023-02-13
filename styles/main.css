@@ -60,7 +60,8 @@ header {
 }
 
 main {
-  /* background-color: wheat; */
+  display: flex;
+  flex-direction: column;
   height: auto;
 }
 
@@ -97,11 +98,6 @@ nav > ul > li > a:visited {
 nav > ul > li > a:hover {
   background-color: #89acbb;
   color: #3a3741;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
 }
 
 section {
@@ -167,7 +163,7 @@ footer {
   border-top: 3px solid #546a74;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   footer {
     height: 15vh;
     background-color: black;
@@ -237,4 +233,33 @@ td {
   flex: 1;
   padding: 40px 20px;
   padding-left: 0;
+}
+
+video,
+iframe,
+audio {
+  margin-top: 30px;
+  width: 80vw;
+}
+
+iframe {
+  height: 30vh;
+}
+
+details {
+  width: 80%;
+  font-size: 1.3rem;
+}
+
+details > summary {
+  flex: 1;
+  font-size: 1.3rem;
+  align-self: flex-start;
+}
+
+details > p {
+  padding-top: 10px;
+  text-align: left;
+  max-width: 90%;
+  font-size: 1.1rem;
 }
