@@ -4,14 +4,21 @@
   margin: 0px;
 }
 
-p {
+p,
+details,
+table {
   font-family: "Tenor Sans";
+  color: #28262c;
 }
 
 h1,
 h2,
-nav {
+nav,
+h3,
+h4,
+table > caption {
   font-family: "Lato";
+  color: #28262c;
 }
 
 body {
@@ -21,26 +28,35 @@ body {
   flex-flow: row wrap;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   text-align: center;
   background-color: #9694b3;
+  border-top: 1.5px solid #83829c;
+  border-bottom: 1.5px solid #83829c;
+  width: 100vw;
   padding: 10px 0;
-  border: 1px solid #83829c;
-  font-size: 3rem;
 }
 
+h1 {
+  font-size: 3rem;
+}
 h2 {
-  text-align: center;
-  padding: 10px 0;
   font-size: 2.5rem;
-  border: 1px solid #83829c;
-  background-color: #9694b3;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.25rem;
 }
 
 header {
   background-color: #8797b2;
   height: 80px;
   align-self: flex-start;
+  width: 100vw;
 }
 
 main {
@@ -48,14 +64,13 @@ main {
   height: auto;
 }
 
-header > nav > ul {
+nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100vw;
 }
 
-header > nav > ul > li {
+nav > ul > li {
   display: flex;
   flex: 1;
   height: 80px;
@@ -66,8 +81,8 @@ header > nav > ul > li {
   background-color: #576f79;
 }
 
-header > nav > ul > li > a:link,
-header > nav > ul > li > a:visited {
+nav > ul > li > a:link,
+nav > ul > li > a:visited {
   display: flex;
   flex: 1;
   justify-content: center;
@@ -79,7 +94,7 @@ header > nav > ul > li > a:visited {
   text-align: center;
 }
 
-header > nav > ul > li > a:hover {
+nav > ul > li > a:hover {
   background-color: #89acbb;
   color: #3a3741;
 }
@@ -89,21 +104,43 @@ main {
   flex-direction: column;
 }
 
+section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .vertical-section {
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 5px 50px;
+  margin-bottom: 20px;
+}
+
+.inline-title {
+  font-size: 1.5rem;
+  margin: 50px;
+}
+
+button {
+  padding: 15px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(223, 222, 222);
 }
 
 pre {
   padding: 30px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .text-chunk {
-  font-size: 2rem;
+  font-size: 1.5rem;
   min-width: 30ex;
   max-width: 80ex;
   padding: 30px;
@@ -130,16 +167,27 @@ footer {
   border-top: 3px solid #546a74;
 }
 
+@media only screen and (max-width: 600px) {
+  footer {
+    height: 15vh;
+    background-color: black;
+  }
+}
+
 footer > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 70%;
   height: auto;
   padding: 0px 40px;
 }
 
-footer > div > h3 {
+footer > nav {
+  align-self: flex-end;
+}
+
+footer > div > h4 {
   font-size: 2rem;
 }
 
@@ -149,4 +197,44 @@ footer > div > p {
 
 footer > nav > ul > li {
   width: 10vw;
+}
+
+table > caption {
+  font-weight: 800;
+  font-size: 1.75rem;
+  font-family: "Lato";
+  color: #28262c;
+}
+
+table {
+  flex: 1;
+  padding: 20px 30px;
+  margin: 20px 30px;
+  border: 4px dashed #8e8ca8;
+}
+
+table > caption {
+  padding-bottom: 20px;
+}
+
+td,
+th {
+  /* text-align: center; */
+  max-width: 50ex;
+  min-width: 20ex;
+  padding: 5px 15px;
+  border-bottom: 2px solid#8e8ca8;
+}
+
+th {
+  font-size: 1.5rem;
+}
+td {
+  font-size: max(15pt, 1rem);
+}
+
+#timeline-div {
+  flex: 1;
+  padding: 40px 20px;
+  padding-left: 0;
 }
