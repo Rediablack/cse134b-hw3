@@ -32,34 +32,37 @@
       <form>
         <fieldset>
           <legend>Send Me A Message</legend>
-          <label for="nameInput">Name:</label>
+          <div class="label-input">
+            <label for="nameInput">Name:</label>
+            <input id="nameInput" name="name" type="text" />
+          </div>
+          <div class="label-input">
+            <label for="emailInput">Email:</label>
+            <input id="emailInput" name="email" type="email" />
+          </div>
+
+          <div class="label-input">
+            <label for="messageInput">Message:</label>
+            <textarea id="messageInput" name="message"></textarea>
+          </div>
+          <div class="label-input">
+            <label for="reason">Reason For Message: </label>
+            <input id="reason" name="contactReason" list="reasons" />
+            <datalist id="reasons">
+              <option value="Job Opportunities"></option>
+              <option value="Website Design Hiring"></option>
+              <option value="Research Opportunities"></option>
+              <option value="Other"></option>
+            </datalist>
+          </div>
           <br />
-          <input id="nameInput" name="name" type="text" />
-          <br />
-          <label for="emailInput">Email:</label>
-          <br />
-          <input id="emailInput" name="email" type="email" />
-          <br />
-          <label for="messageInput">Message:</label>
-          <br />
-          <textarea id="messageInput" name="message"></textarea>
-          <br />
-          <label for="reason">Reason For Message: </label>
-          <input id="reason" name="contactReason" list="reasons" />
-          <datalist id="reasons">
-            <option value="Job Opportunities"></option>
-            <option value="Website Design Hiring"></option>
-            <option value="Research Opportunities"></option>
-            <option value="Other"></option>
-          </datalist>
-          <br />
-          <input type="submit" value="Submit" />
+          <button type="submit">Submit</button>
         </fieldset>
       </form>
 
       <aside>
-        <h4>I'm Always <em>Available</em></h4>
-        <p>
+        <h3>I'm Always <em>Available</em></h3>
+        <p class="text-chunk">
           You can contact me whenever, wherever, through whichever method you
           prefer. Whether to ask me questions, to consider me for your company
           or just to have a conversation, feel free to contact me. If you want

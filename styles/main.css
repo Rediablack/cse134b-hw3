@@ -6,7 +6,9 @@
 
 p,
 details,
-table {
+table,
+li,
+label {
   font-family: "Tenor Sans";
   color: #28262c;
 }
@@ -16,7 +18,8 @@ h2,
 nav,
 h3,
 h4,
-table > caption {
+table > caption,
+legend {
   font-family: "Lato";
   color: #28262c;
 }
@@ -264,4 +267,71 @@ details > p {
   text-align: left;
   max-width: 90%;
   font-size: 1.1rem;
+}
+
+section > ul,
+#timeline-div > ol {
+  padding: 20px 0px;
+  font-size: 1.4rem;
+}
+
+#timeline-div > ol > li {
+  margin: 20px 0px;
+}
+
+form {
+  width: 70%;
+  align-self: center;
+  padding: 40px;
+  background-color: rgb(152, 170, 170);
+  margin: 30px 0;
+}
+
+form > fieldset {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(184, 204, 204);
+}
+
+legend {
+  font-size: 2rem;
+}
+
+input,
+textarea {
+  height: 1.5rem;
+  flex: 1;
+}
+
+select {
+  height: 3rem;
+  margin: 0 20px;
+  padding: 10px;
+}
+
+.label-input {
+  width: 80%;
+  display: flex;
+  align-content: flex-start;
+  padding: 10px 0px;
+}
+
+#messageInput {
+  height: 6rem;
+}
+
+label {
+  width: 30%;
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
 }
