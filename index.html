@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MZW Portfolio Home</title>
     <link href="images/favicon.ico" rel="icon" />
     <link
@@ -34,8 +34,20 @@
       <section>
         <h2>About Me</h2>
         <div class="vertical-section">
-          <picture>
-            <img src="./images/potrait.jpeg" alt="self potrait" />
+          <picture class="product__img">
+            <source
+              srcset="./images/potrait_large.jpeg"
+              width="450"
+              height="450"
+              alt="Image of Myo Zaw Win"
+              media="(min-width: 600px)"
+            />
+            <img
+              src="./images/potrait_mobile.jpeg"
+              width="250"
+              height="250"
+              alt="Image of Myo Zaw Win"
+            />
           </picture>
           <pre>
 <code>print(user.info);</code>
