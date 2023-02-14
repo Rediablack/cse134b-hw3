@@ -206,6 +206,10 @@ figure {
   align-items: center;
 }
 
+figcaption {
+  max-width: 70%;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -269,7 +273,7 @@ table {
 
 td,
 th {
-  max-width: 40ch;
+  max-width: 30ch;
   padding: 5px 15px;
   border-bottom: 2px solid#8e8ca8;
 }
@@ -280,7 +284,7 @@ th {
 
 td {
   vertical-align: middle;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: font-size 1s, background-color 1s, border-radius 1.5s;
   transition-timing-function: linear;
 }
